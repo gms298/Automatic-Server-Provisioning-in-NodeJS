@@ -10,7 +10,7 @@ Automatically provision servers using nodeJS API from 2 service providers - Amaz
 
 In Terminal (macOS) or Powershell (Windows) type in the following:
 
-`git clone https://github.com/gms298/Automatic-Server-Provisioning-in-NodeJS`
+`git clone https://github.com/gms298/Automatic-Server-Provisioning-using-NodeJS`
 
 Before running the program, it is essential to set your own access keys as environment variables. Here is a list of all environment variables required: 
 
@@ -21,11 +21,10 @@ Key to be set  | Environment variable
  Digital Ocean Access Token| DOTOKEN
  Digital Ocean SSH key| DOPERSONALKEY
 
-Now, run the shell script using `. main.sh`. This will automatically execute two programs:
+Now, run the [main.sh](https://github.com/gms298/Automatic-Server-Provisioning-using-NodeJS/blob/master/main.sh) shell script using `. main.sh`. This will automatically execute two programs:
 
-* [aws.js]() - Provisions a EC2 instance in Amazon Web Services (AWS).
-* [droplet.js]() - Provisions a droplet in Digital Ocean.
+* [aws.js](https://github.com/gms298/Automatic-Server-Provisioning-using-NodeJS/blob/master/aws.js) - Provisions a EC2 instance in Amazon Web Services (AWS).
+* [droplet.js](https://github.com/gms298/Automatic-Server-Provisioning-using-NodeJS/blob/master/droplet.js) - Provisions a droplet in Digital Ocean.
 
 Both the servers are spawned using Ubuntu 16.04 images and the **public IP addresses** of both servers are printed in the terminal/powershell console. 
 These IP addresses can then be pinged to verify that it is reachable.
-
